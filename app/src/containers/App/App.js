@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import {Route} from "react-router-dom";
 import TransitionGroup from "react-transition-group/TransitionGroup";
 
-import {AnimatedSwitch} from "components";
+import {AnimatedSwitch, Footer, Header} from "components";
 import {AnimateExamplePage, MainPage} from "containers";
 
 import './app.less';
@@ -15,6 +15,7 @@ export default class App extends Component {
     render() {
         return (
             <div className="wrapper-page">
+                <Header/>
                 <Route
                     render={({location}) => (
                         <TransitionGroup component="main">
@@ -28,6 +29,7 @@ export default class App extends Component {
                         </TransitionGroup>
                     )}
                 />
+                <Footer/>
             </div>
         )
     }

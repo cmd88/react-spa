@@ -72,7 +72,8 @@ let config = {
     devServer: {
         contentBase: "./build",
         historyApiFallback: true,
-        inline: true
+        inline: true,
+        open: true
     }
 };
 
