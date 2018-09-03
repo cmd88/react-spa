@@ -2,8 +2,8 @@ import React, {Component} from "react";
 import {Route} from "react-router-dom";
 import TransitionGroup from "react-transition-group/TransitionGroup";
 
-import {AnimatedSwitch, Footer, Header} from "components";
-import {AnimateExamplePage, MainPage} from "containers";
+import {AnimatedSwitch, Footer, Header} from 'components';
+import {AnimateExamplePage, MainPage} from 'containers';
 
 import './app.less';
 
