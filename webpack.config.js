@@ -12,6 +12,7 @@ let config = {
       'actions': path.resolve(__dirname, 'app/model/actions'),
       'components': path.resolve(__dirname, 'app/view/components'),
       'containers': path.resolve(__dirname, 'app/view/containers'),
+      'elements': path.resolve(__dirname, 'app/view/elements'),
       'fonts': path.resolve(__dirname, 'app/assets/fonts'),
       'img': path.resolve(__dirname, 'app/assets/img'),
       'style': path.resolve(__dirname, 'app/assets/style'),

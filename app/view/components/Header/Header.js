@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import { NavLink } from 'react-router-dom'
 
 import './header.less';
 
@@ -17,7 +18,13 @@ export default class Header extends Component {
 
     render() {
         return (
-            <div className="wrapper-header">Header</div>
+            <div className="wrapper-header">
+                <div className="wrapeer-navlinks">
+                    <NavLink to="/">Main</NavLink>
+                    <NavLink to="/animateExamplePage">animateExamplePage</NavLink>
+                    <NavLink to="/redux-form">Redux Form</NavLink>
+                </div>
+            </div>
         )
     }
 }

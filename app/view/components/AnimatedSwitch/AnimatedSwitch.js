@@ -29,8 +29,9 @@ export default class AnimatedSwitch extends Switch {
     }
 
     componentWillLeave(cb) {
-        Animated.spring(this.state.animate, { toValue: 0 }).start();
-        setTimeout(() => cb(), 175);
+         cb();
+/*        Animated.spring(this.state.animate, { toValue: 0 }).start();
+        setTimeout(() => cb(), 175);*/
     }
 
     render() {
@@ -39,7 +40,7 @@ export default class AnimatedSwitch extends Switch {
             transform: Animated.template`
 				translate3d(0,${this.state.animate.interpolate({
                 inputRange: [0, 1],
-                outputRange: ["24px", "0px"]
+                outputRange: ["36px", "0px"]
             })},0)
 			`
         };
