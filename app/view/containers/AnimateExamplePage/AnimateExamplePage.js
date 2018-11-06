@@ -1,21 +1,17 @@
-import React, {Component} from "react";
+import React, { Component } from 'react';
 
 export default class AnimateExamplePage extends Component {
-    constructor(props) {
-        super(props);
-    }
+  componentWillMount() {
+    console.log('[AnimateExamplePage] componentWillMount');
+  }
 
-    componentDidMount() {
-        console.log(`[AnimateExamplePage] componentDidMount`);
-    }
+  componentDidMount() {
+    console.log('[AnimateExamplePage] componentDidMount');
+  }
 
-    componentWillMount() {
-        console.log(`[AnimateExamplePage] componentWillMount`);
-    }
-
-    render() {
-        return (
-            <div><div>AnimateExamplePage container</div></div>
-        )
-    }
+  render() {
+    return (
+      <div><div>AnimateExamplePage container</div></div>
+    );
+  }
 }
