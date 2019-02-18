@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import decorator from 'decorators/decorator';
 import * as reducerOneActions from 'actions/actionsOne';
 
 import './mainPage.less';
+
+const Decorator = decorator();
 
 class MainPage extends Component {
   componentWillMount() {
@@ -28,6 +31,8 @@ class MainPage extends Component {
         <div>MainPage container</div>
         <div className="text">{reducerOne.propTwo}</div>
         <button type="button" className="button" onClick={this.clickButton.bind(this)}>button</button>
+        <Decorator>not empty child in decorator</Decorator>
+        <Decorator />
       </div>
     );
   }
